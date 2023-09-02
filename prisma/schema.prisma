@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Endereco {
+  id           Int      @id @default(autoincrement())
+  CodigoPostal String
+  Descricao    String
+  Complemento  String?  // O '?' indica que é opcional
+  Cliente      Cliente[]
+}
+
+model NotaFiscal {
+  id                       Int      @id @default(autoincrement())
+  ValorComImpostosAplicados Float
+  Pedidos                  Pedido[]
+}
+
+model Cliente {
+  id         Int      @id @default(autoincrement())
+  Nome       String   @db.VarChar(50)
+  EnderecoId Int
+  Endereco   Endereco @relation(fields: [EnderecoId], references: [id])
+  Pedidos    Pedido[]
+}
+
+model Pedido {
+  id          Int         @id @default(autoincrement())
+  ValorBruto  Float
+  ClienteId   Int
+  NFId        Int?
+  Cliente     Cliente     @relation(fields: [ClienteId], references: [id])
+  NotaFiscal  NotaFiscal? @relation(fields: [NFId], references: [id])
+}
