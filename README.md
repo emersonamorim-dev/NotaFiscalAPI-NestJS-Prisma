@@ -5,6 +5,7 @@ Codificação de uma API de Nota Fiscal construída com NestJS, programado em Ty
 ## Pré-requisitos
 
 - Node.js
+- NestJS
 - Docker e Docker Compose
 - MySQL
 
