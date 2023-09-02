@@ -3,7 +3,7 @@
 Codificação de uma API de Nota Fiscal construída com NestJS, programado em Typescript e utilizando o banco de dados MySQL Swagger para gerenciar os Endpoints e o Prisma para gerenciamento de banco de dados e migrações. Além disso, a aplicação é contêinerizada usando Docker.
 
 ## Pré-requisitos
-
+ 
 - Node.js
 - NestJS
 - Docker e Docker Compose
