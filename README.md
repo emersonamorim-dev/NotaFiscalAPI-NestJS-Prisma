@@ -120,6 +120,6 @@ GET /pedidos/:id: Recupera um pedido pelo ID.
 PUT /pedidos/:id: Atualiza um pedido pelo ID.
 DELETE /pedidos/:id: Deleta um pedido pelo ID.
 
-
+```
 ## Autor:
 Emerson Amorim
