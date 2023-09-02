@@ -1,8 +1,8 @@
-# NotaFiscalAPI - NestJS - Prisma
+# NotaFiscalAPI - NestJS - Prisma 🚀 
 
 Codificação de uma API de Nota Fiscal construída com NestJS, programado em Typescript e utilizando o banco de dados MySQL Swagger para gerenciar os Endpoints e o Prisma para gerenciamento de banco de dados e migrações. Além disso, a aplicação é contêinerizada usando Docker.
 
-## Pré-requisitos
+## Pré-requisitos 🛠
  
 - Node.js
 - NestJS
@@ -47,7 +47,7 @@ A documentação da API está disponível em http://localhost:3000/api no Swagge
 
 
 
-Método e Endpoint:
+Método e Endpoint: 🌐 
 POST /clientes
 
 Método: POST
